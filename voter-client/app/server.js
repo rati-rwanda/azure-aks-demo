@@ -4,7 +4,7 @@
 
 var express = require('express');
 var serveStatic = require('serve-static');
-var port = process.env.PORT || 8080;
+var port = 3000;
 var app = express();
 
 app.use(serveStatic(__dirname, {'index': ['index.html']}));
