@@ -19,4 +19,4 @@ spec:
         - name: aks-test-2
           image: akstest2.azurecr.io/frontendaksimage:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 9090
