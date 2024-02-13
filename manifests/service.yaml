@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aks-test-2
+  namespace: aks-test-app-namespace
+spec:
+  type: LoadBalancer
+  selector:
+    app: aks-test-2
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
