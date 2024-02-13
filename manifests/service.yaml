@@ -9,5 +9,5 @@ spec:
     app: aks-test-2
   ports:
     - protocol: TCP
-      port: 3000
-      targetPort: 3000
+      port: 9090
+      targetPort: 9090
