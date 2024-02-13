@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aks-test-2
+  labels:
+    app: aks-test-2
+  namespace: aks-test-app-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aks-test-2
+  template:
+    metadata:
+      labels:
+        app: aks-test-2
+    spec:
+      containers:
+        - name: aks-test-2
+          image: akstest2.azurecr.io/frontendaksimage:latest
+          ports:
+            - containerPort: 3000
